@@ -8,9 +8,7 @@
 <p>{{ original_title }}</p>
 {{ /if }}
 
-{{ if rate }}
-<p>{{ rate }}</p>
-{{ /if }}
+{{ include './rating_stars.art' }}
 
 {{ if card_subtitle }}
 <p>{{ card_subtitle }}</p>
@@ -19,6 +17,8 @@
 {{ if description }}
 <p>{{ description }}</p>
 {{ /if }}
+
+{{ include './details_block.art' }}
 
 {{ if cover }}
 <img src="{{ cover }}" />

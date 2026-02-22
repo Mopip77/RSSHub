@@ -1,0 +1,10 @@
+{{ if details && details.length }}
+<div>
+    <p><strong>详情</strong></p>
+    <ul>
+        {{each details}}
+            <li>{{$value.label}}: {{$value.value}}</li>
+        {{/each}}
+    </ul>
+</div>
+{{ /if }}
