@@ -20,6 +20,10 @@
 
 {{ include './details_block.art' }}
 
+{{ if telegram_search_link }}
+<p><a href="{{ telegram_search_link }}">Telegram 搜索资源</a></p>
+{{ /if }}
+
 {{ if cover }}
 <img src="{{ cover }}" />
 {{ /if }}
